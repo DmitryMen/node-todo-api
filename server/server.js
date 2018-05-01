@@ -21,7 +21,7 @@ app.post('/todos', (req, res) => {
   todo.save().then((doc) => {
     res.send(doc);
   }, e => {
-    res.status(404).send(e);
+    res.status(400).send(e);
   });
 
 });
@@ -29,3 +29,5 @@ app.post('/todos', (req, res) => {
 app.listen(4201, () => {
   console.log('App running po port 4201');
 });
+
+module.exports = {app};
