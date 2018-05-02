@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "nodemon --exec mocha server/**/*.test.js",
-    "start": "nodemon server/server"
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": "8.9.3"
   },
   "author": "",
   "license": "ISC",
